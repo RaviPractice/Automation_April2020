@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="9" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="47188" started-at="2020-06-11T03:48:07Z" finished-at="2020-06-11T03:48:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="47188" started-at="2020-06-11T03:48:07Z" finished-at="2020-06-11T03:48:54Z">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="verifyLoginPageTitleTest" duration-ms="29" started-at="2020-06-11T03:48:40Z" finished-at="2020-06-11T03:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifyForgotpaswdLink()[pri:2, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="verifyForgotpaswdLink" duration-ms="777" started-at="2020-06-11T03:48:41Z" finished-at="2020-06-11T03:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotpaswdLink -->
+        <test-method status="PASS" signature="verifyLoginButton()[pri:3, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="verifyLoginButton" duration-ms="789" started-at="2020-06-11T03:48:43Z" finished-at="2020-06-11T03:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButton -->
+        <test-method status="PASS" signature="verifySocialIcons()[pri:4, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="verifySocialIcons" duration-ms="667" started-at="2020-06-11T03:48:43Z" finished-at="2020-06-11T03:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySocialIcons -->
+        <test-method status="PASS" signature="loginTest()[pri:5, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="loginTest" duration-ms="8158" started-at="2020-06-11T03:48:44Z" finished-at="2020-06-11T03:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+      <class name="com.qa.orangehrm.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@39fb3ab6]" name="setUp" is-config="true" duration-ms="24608" started-at="2020-06-11T03:48:07Z" finished-at="2020-06-11T03:48:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="setUp" is-config="true" duration-ms="8624" started-at="2020-06-11T03:48:32Z" finished-at="2020-06-11T03:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyTitleTest()[pri:1, instance:com.qa.orangehrm.tests.HomePageTest@39fb3ab6]" name="verifyTitleTest" duration-ms="29" started-at="2020-06-11T03:48:40Z" finished-at="2020-06-11T03:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method status="PASS" signature="verifyHomepagebanner()[pri:2, instance:com.qa.orangehrm.tests.HomePageTest@39fb3ab6]" name="verifyHomepagebanner" duration-ms="691" started-at="2020-06-11T03:48:40Z" finished-at="2020-06-11T03:48:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepagebanner -->
+        <test-method status="PASS" signature="verifyUserName()[pri:3, instance:com.qa.orangehrm.tests.HomePageTest@39fb3ab6]" name="verifyUserName" duration-ms="795" started-at="2020-06-11T03:48:42Z" finished-at="2020-06-11T03:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@39fb3ab6]" name="tearDown" is-config="true" duration-ms="1162" started-at="2020-06-11T03:48:52Z" finished-at="2020-06-11T03:48:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="794" started-at="2020-06-11T03:48:53Z" finished-at="2020-06-11T03:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

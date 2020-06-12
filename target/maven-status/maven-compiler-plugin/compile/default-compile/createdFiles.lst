@@ -1,0 +1,10 @@
+com\qa\orangehrm\util\JavaScriptUtil.class
+com\qa\oranghrm\base\BasePage.class
+com\qa\orangehrm\util\Credentials.class
+com\qa\orangehrm\pages\LoginPage.class
+com\qa\orangehrm\pages\HomePage.class
+com\qa\orangehrm\util\ElementUtil.class
+com\qa\orangehrm\util\ExcelUtil.class
+com\qa\orangehrm\util\AppConistents.class
+com\qa\oranghrm\base\OptionsManager.class
+com\qa\orangehrm\listeners\ExtentReportListener.class

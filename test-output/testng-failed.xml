@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Regression Suite]">
+  <listeners>
+    <listener class-name="com.qa.orangehrm.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Orange HRM Functional Regression Test(failed)">
+    <classes>
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <methods>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Orange HRM Functional Regression Test(failed) -->
+</suite> <!-- Failed suite [Orange HRM Regression Suite] -->

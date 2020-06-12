@@ -1,0 +1,6 @@
+com\qa\orangehrm\tests\PHPTravelsDemoTest.class
+com\qa\orangehrm\tests\ExplicitWaitConcept.class
+com\qa\orangehrm\tests\LoginPageTest.class
+com\qa\orangehrm\tests\ElementUtil.class
+com\qa\orangehrm\tests\HomePageTest.class
+com\qa\orangehrm\tests\OrangeHRMDemo.class
