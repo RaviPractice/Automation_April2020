@@ -7,7 +7,7 @@ public class AppConistents {
 	
 	
 	//***********************page constants*********************
-	public static final String LOGIN_PAGE_TITLE = "OrangeHRM111";
+	public static final String LOGIN_PAGE_TITLE = "OrangeHRM";
 	public static final String HOME_PAGE_TITLE = "OrangeHRM";
 	public static final String ADMIN_PAGE_TITLE = "OrangeHRM";
 	
