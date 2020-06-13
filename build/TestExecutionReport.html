@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 12, 2020 10:10:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 13, 2020 12:06:30 AM</span>
 				</a>
 			</li>
 			<li>
@@ -136,10 +136,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -151,10 +151,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -172,14 +172,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyLoginPageTitleTest</span>
-						<span class='test-time'>Jun 12, 2020 10:11:02 PM</span>
+						<span class='test-time'>Jun 13, 2020 12:07:24 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 12, 2020 10:11:02 PM</span>
-	<span class='label end-time'>Jun 12, 2020 10:11:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+594ms</span>
+	<span class='label start-time'>Jun 13, 2020 12:07:24 AM</span>
+	<span class='label end-time'>Jun 13, 2020 12:07:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+393ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -199,15 +199,103 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>10:11:23 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Supplied function might have stalled
+					<td class='timestamp'>12:07:47 AM</td>
+					<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "OrangeHRM111". Current title: "OrangeHRM" (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
 System info: host: 'RAVI-PC', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)
-	at com.qa.orangehrm.util.ElementUtil.waitForTitlePresent(ElementUtil.java:41)
-	at com.qa.orangehrm.pages.LoginPage.getPageTitle(LoginPage.java:36)
-	at com.qa.orangehrm.tests.LoginPageTest.verifyLoginPageTitleTest(LoginPageTest.java:52)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\RAVI\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aafac9810236be4f80baf6c71ef7eb15
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.lambda$checkConditionInLoop$2(FluentWait.java:255)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre><img data-featherlight='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987067134.png' width='10%' src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987067134.png' data-src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987067134.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyForgotpaswdLink</span>
+						<span class='test-time'>Jun 13, 2020 12:07:47 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 13, 2020 12:07:47 AM</span>
+	<span class='label end-time'>Jun 13, 2020 12:07:50 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+16ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OrangeHRMRegressionSuite</span>
+				<span class='category label white-text'>LoginPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:07:50 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginButton</span>
+						<span class='test-time'>Jun 13, 2020 12:07:50 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 13, 2020 12:07:50 AM</span>
+	<span class='label end-time'>Jun 13, 2020 12:08:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+139ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OrangeHRMRegressionSuite</span>
+				<span class='category label white-text'>LoginPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:08:11 AM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.orangehrm.tests.LoginPageTest.verifyLoginButton(LoginPageTest.java:77)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -221,104 +309,14 @@ Driver info: driver.version: unknown
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
-	at java.util.concurrent.CompletableFuture.get(Unknown Source)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
-</pre><img data-featherlight='C:\Users\RAVI\April2020\Automation_April2020\Screenshots1591980083306.png' width='10%' src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots1591980083306.png' data-src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots1591980083306.png'></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyForgotpaswdLink</span>
-						<span class='test-time'>Jun 12, 2020 10:11:23 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jun 12, 2020 10:11:23 PM</span>
-	<span class='label end-time'>Jun 12, 2020 10:11:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+64ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>OrangeHRMRegressionSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:11:24 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginButton</span>
-						<span class='test-time'>Jun 12, 2020 10:11:24 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jun 12, 2020 10:11:24 PM</span>
-	<span class='label end-time'>Jun 12, 2020 10:11:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+839ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>OrangeHRMRegressionSuite</span>
-				<span class='category label white-text'>LoginPageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:11:25 PM</td>
-					<td class='step-details'>Test passed</td>
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre><img data-featherlight='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987091382.png' width='10%' src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987091382.png' data-src='C:\Users\RAVI\April2020\Automation_April2020\Screenshots\1591987091382.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -330,14 +328,14 @@ Caused by: java.util.concurrent.TimeoutException
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>verifySocialIcons</span>
-						<span class='test-time'>Jun 12, 2020 10:11:25 PM</span>
+						<span class='test-time'>Jun 13, 2020 12:08:11 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 12, 2020 10:11:25 PM</span>
-	<span class='label end-time'>Jun 12, 2020 10:11:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+717ms</span>
+	<span class='label start-time'>Jun 13, 2020 12:08:11 AM</span>
+	<span class='label end-time'>Jun 13, 2020 12:08:12 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+807ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -357,7 +355,7 @@ Caused by: java.util.concurrent.TimeoutException
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:11:26 PM</td>
+					<td class='timestamp'>12:08:12 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -370,14 +368,14 @@ Caused by: java.util.concurrent.TimeoutException
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Jun 12, 2020 10:11:26 PM</span>
+						<span class='test-time'>Jun 13, 2020 12:08:12 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 12, 2020 10:11:26 PM</span>
-	<span class='label end-time'>Jun 12, 2020 10:11:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+915ms</span>
+	<span class='label start-time'>Jun 13, 2020 12:08:12 AM</span>
+	<span class='label end-time'>Jun 13, 2020 12:08:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+918ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -397,7 +395,7 @@ Caused by: java.util.concurrent.TimeoutException
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:11:34 PM</td>
+					<td class='timestamp'>12:09:20 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -459,14 +457,14 @@ Caused by: java.util.concurrent.TimeoutException
 					<div class='category-heading'>
 						<span class='category-name'>OrangeHRMRegressionSuite</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>3</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -481,27 +479,27 @@ Caused by: java.util.concurrent.TimeoutException
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 12, 2020 10:11:02 PM</td>
+										<td>Jun 13, 2020 12:07:24 AM</td>
 										<td class='linked' test-id='1'>verifyLoginPageTitleTest</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:23 PM</td>
+										<td>Jun 13, 2020 12:07:47 AM</td>
 										<td class='linked' test-id='2'>verifyForgotpaswdLink</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:24 PM</td>
+										<td>Jun 13, 2020 12:07:50 AM</td>
 										<td class='linked' test-id='3'>verifyLoginButton</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:25 PM</td>
+										<td>Jun 13, 2020 12:08:11 AM</td>
 										<td class='linked' test-id='4'>verifySocialIcons</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:26 PM</td>
+										<td>Jun 13, 2020 12:08:12 AM</td>
 										<td class='linked' test-id='5'>loginTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -514,14 +512,14 @@ Caused by: java.util.concurrent.TimeoutException
 					<div class='category-heading'>
 						<span class='category-name'>LoginPageTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>3</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -536,27 +534,27 @@ Caused by: java.util.concurrent.TimeoutException
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 12, 2020 10:11:02 PM</td>
+										<td>Jun 13, 2020 12:07:24 AM</td>
 										<td class='linked' test-id='1'>verifyLoginPageTitleTest</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:23 PM</td>
+										<td>Jun 13, 2020 12:07:47 AM</td>
 										<td class='linked' test-id='2'>verifyForgotpaswdLink</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:24 PM</td>
+										<td>Jun 13, 2020 12:07:50 AM</td>
 										<td class='linked' test-id='3'>verifyLoginButton</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:25 PM</td>
+										<td>Jun 13, 2020 12:08:11 AM</td>
 										<td class='linked' test-id='4'>verifySocialIcons</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 12, 2020 10:11:26 PM</td>
+										<td>Jun 13, 2020 12:08:12 AM</td>
 										<td class='linked' test-id='5'>loginTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -619,16 +617,50 @@ Caused by: java.util.concurrent.TimeoutException
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jun 12, 2020 10:11:02 PM</td>
+                                                        <td>Jun 13, 2020 12:07:24 AM</td>
                                                         <td class='linked' test-id='1'>verifyLoginPageTitleTest</td>
-                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Supplied function might have stalled
+                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "OrangeHRM111". Current title: "OrangeHRM" (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
 System info: host: 'RAVI-PC', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)
-	at com.qa.orangehrm.util.ElementUtil.waitForTitlePresent(ElementUtil.java:41)
-	at com.qa.orangehrm.pages.LoginPage.getPageTitle(LoginPage.java:36)
-	at com.qa.orangehrm.tests.LoginPageTest.verifyLoginPageTitleTest(LoginPageTest.java:52)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\RAVI\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aafac9810236be4f80baf6c71ef7eb15
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.lambda$checkConditionInLoop$2(FluentWait.java:255)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jun 13, 2020 12:07:50 AM</td>
+                                                        <td class='linked' test-id='3'>verifyLoginButton</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.orangehrm.tests.LoginPageTest.verifyLoginButton(LoginPageTest.java:77)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -642,23 +674,13 @@ Driver info: driver.version: unknown
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
-	at java.util.concurrent.CompletableFuture.get(Unknown Source)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 28 more
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -697,19 +719,19 @@ Caused by: java.util.concurrent.TimeoutException
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 12, 2020 10:10:44 PM</div>
+					<div class='panel-lead'>Jun 13, 2020 12:06:30 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 12, 2020 10:11:36 PM</div>
+			 		<div class='panel-lead'>Jun 13, 2020 12:10:22 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 51s+887ms</div>
+					<div class='panel-lead'>0h 3m 52s+313ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -726,20 +748,20 @@ Caused by: java.util.concurrent.TimeoutException
 						</tr>
 						<tr>
 							<td>OrangeHRMRegressionSuite</td>
-							<td>4</td>
-							<td>1</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									80%
+									60%
 							</td>
 						</tr>
 						<tr>
 							<td>LoginPageTest</td>
-							<td>4</td>
-							<td>1</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									80%
+									60%
 							</td>
 						</tr>
 					</table>
@@ -755,22 +777,22 @@ Caused by: java.util.concurrent.TimeoutException
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 1,
+				passParent: 3,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 4,
-				failChild: 1,
+				passChild: 3,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -100,7 +100,7 @@ public class BasePage {
 	 */
 	public String getScreenshot() {
 		File source =((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-		String path =System.getProperty("user.dir") + "\\Screenshots" + System.currentTimeMillis() + ".png";
+		String path =System.getProperty("user.dir") + "\\Screenshots\\" + System.currentTimeMillis() + ".png";
 		File destination = new File(path);
 		try {
 			FileUtils.copyFile(source, destination);

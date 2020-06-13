@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.pages.HomePage;
@@ -32,11 +33,19 @@ public class LoginPageTest {
 	Credentials userCred;
 
 	@BeforeTest
-	public void setUp() {
+	@Parameters(value = {"browser"})
+	public void setUp(String browser) {
+		String browserName = null;
 		
 		basepage = new BasePage();
 		prop = basepage.initlize_propperties();
-		String browserName = prop.getProperty("browser");
+		
+		if(browser.equals(null)) {
+			 browserName = prop.getProperty("browser");
+			
+		}else {
+			browserName = browser;
+		}
 		driver = basepage.initlize_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginpage = new LoginPage(driver);
