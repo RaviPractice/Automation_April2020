@@ -4,17 +4,15 @@
 <suite name="Orange HRM Regression Suite">
 
 	<listeners>
-	<listener class-name="com.qa.orangehrm.listeners.ExtentReportListener" />
 
-		<!-- <listener class-name="com.qa.hubspot.listeners.TesultsListener" />
-		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
-		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" /> -->
-
-		<!-- <listener class-name="com.qa.hubspot.listeners.ScreenshotListener" /> -->
+		<listener class-name="com.qa.orangehrm.listeners.TesultsListener" />
+		<listener class-name="com.qa.orangehrm.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.orangehrm.listeners.TestAllureListener" />
 
 	</listeners>
-
+	
 	<test name="Orange HRM Functional Regression Test">
+	<parameter name = "browser" value = "chrome" />
 		<classes>
 			<class name="com.qa.orangehrm.tests.LoginPageTest" />
 		</classes>
