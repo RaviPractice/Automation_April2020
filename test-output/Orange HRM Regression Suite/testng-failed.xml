@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Regression Suite]">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Regression Suite]" parallel="tests">
   <listeners>
     <listener class-name="com.qa.orangehrm.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Orange HRM Functional Regression Test(failed)">
+  <test thread-count="2" name="Orange HRM Functional Regression Test - chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.orangehrm.tests.LoginPageTest">
         <methods>
+          <include name="verifyLoginButton"/>
           <include name="verifyLoginPageTitleTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Orange HRM Functional Regression Test(failed) -->
+  </test> <!-- Orange HRM Functional Regression Test - chrome(failed) -->
 </suite> <!-- Failed suite [Orange HRM Regression Suite] -->
