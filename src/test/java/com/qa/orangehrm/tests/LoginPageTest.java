@@ -57,33 +57,33 @@ public class LoginPageTest {
 	@Description("verify Login page title test...")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyLoginPageTitleTest() throws InterruptedException {
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		String title = loginpage.getPageTitle();
 		System.out.println("loginpage title is :" + title);
 		Assert.assertEquals(title, AppConistents.LOGIN_PAGE_TITLE);
 
 	}
 
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	@Description("verify forgot password link..")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyForgotpaswdLink() {
 		Assert.assertTrue(loginpage.checkForgotpswdlink());
 	}
-	@Test(priority=3)
+	@Test(priority=3,enabled=false)
 	@Description("verify login button..")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyLoginButton() {
 		Assert.assertTrue(loginpage.checkLoginButton());
 	}
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	@Description("verify social icons..")
 	@Severity(SeverityLevel.MINOR)
 	public void verifySocialIcons() {
 		Assert.assertTrue(loginpage.checkSocialIcons());
 	}
 
-	@Test(priority=5)
+	@Test(priority=5,enabled=false)
 	@Description("verify forgot password link..")
 	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {
