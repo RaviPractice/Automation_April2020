@@ -60,7 +60,8 @@ public class BasePage {
 			System.out.println("browsername :"+browserName +"is not found please pass the correct browser");
 		}
 		getDriver().manage().deleteAllCookies();
-		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		getDriver().manage().window().maximize();
 		//driver.get(url);
 		return getDriver();

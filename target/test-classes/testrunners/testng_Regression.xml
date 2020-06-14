@@ -5,9 +5,7 @@
 
 	<listeners>
 
-		<listener class-name="com.qa.orangehrm.listeners.TesultsListener" />
 		<listener class-name="com.qa.orangehrm.listeners.ExtentReportListener" />
-		<listener class-name="com.qa.orangehrm.listeners.TestAllureListener" />
 
 	</listeners>
 	
