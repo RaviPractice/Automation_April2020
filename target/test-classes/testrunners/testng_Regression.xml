@@ -4,7 +4,7 @@
 <suite name="Orange HRM Regression Suite">
 
 	<listeners>
-
+		<listener class-name="com.qa.orangehrm.listeners.ExtentReportListener" />
 		<listener class-name="com.qa.orangehrm.listeners.TestAllureListener" />
 
 	</listeners>
